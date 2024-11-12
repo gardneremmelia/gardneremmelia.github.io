@@ -14,11 +14,12 @@ header {
 
 header h1 {
     background-color: azure;
+    font-size: 40px;
 }
 
 header h2 {
     text-align: right;
-    font-size: 15px;
+    font-size: 20px;
     margin: 10px;
     color:#807182;
     background-color: azure;
@@ -35,42 +36,16 @@ body {
 
 img {
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
   }
 
-.container {
-    position: relative;
-    width: 50%;
+footer {
+    padding: 5px;
+    margin: 10px;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #D8AA96;
-    overflow: hidden;
-    width: 50%;
-    height: 0;
-    transition: .5s ease;
-}
-  
-.container:hover .overlay {
-    height: 100%;
-}
-  
-.text {
-    white-space: nowrap; 
-    color: azure;
-    background-color: #D8AA96;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+a {
+    color: #807182;
 }
