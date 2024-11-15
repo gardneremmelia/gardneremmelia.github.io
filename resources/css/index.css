@@ -1,51 +1,104 @@
 * {
-    font-family: Georgia;
-    background-color: #FFC9B5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
-    color: #F7B1AB;
-    background-color: azure;
-    padding: 10px;
-    margin: 20px;
+    background:#DCE9C4;
     text-align: center;
-    overflow: fixed;
+    color: #2F3E28;
+    height: 150px;
+    line-height: 0.8;
+    padding: 20px;
 }
 
-header h1 {
-    background-color: azure;
-    font-size: 40px;
+.introduction {
+    padding: 5px 10px;
 }
 
-header h2 {
-    text-align: right;
+.introduction a {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#skills {
+    background: #9DB17C;
+    padding: 5px 10px;
+    margin-right: 50%;
+    position: fixed;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#skills h3 {
+    color: white;
     font-size: 20px;
-    margin: 10px;
-    color:#807182;
-    background-color: azure;
 }
 
-body {
-    font-size: 15px;
+#skills h4 {
+    text-transform: uppercase;
 }
 
-#introduction {
-    padding: 5px;
-    margin: 10px;
-}
-
-img {
+#backend {
+    text-align: center;
     display: inline-block;
+    border: solid white;
+    background: #DCE9C4;
+    border-radius: 15px;
+    height: 100px;
     position: relative;
-    width: 200px;
-    border-radius: 10px;
-  }
+    width: 75%;
+    padding: 5px 10px;
+    margin-right: 50%;
+}
+
+#frontend {
+    text-align: center;
+    display: inline-block;
+    border: solid white;
+    background: #C1D897;
+    border-radius: 15px;
+    height: 100px;
+    position: relative;
+    width: 75%;
+    padding: 5px 10px;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+
+#misc {
+    text-align: center;
+    display: inline-block;
+    border: solid white;
+    background: #B0CD7A;
+    border-radius: 15px;
+    height: 150px;
+    position: relative;
+    width: 75%;
+    padding: 5px 10px;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+
+#softskills {
+    text-align: center;
+    display: inline-block;
+    border: solid white;
+    background: #9EC15C;
+    border-radius: 15px;
+    height: 125px;
+    position: relative;
+    width: 75%;
+    padding: 5px 10px;
+    margin-right: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 footer {
-    padding: 5px;
-    margin: 10px;
-}
-
-a {
-    color: #807182;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
 }
