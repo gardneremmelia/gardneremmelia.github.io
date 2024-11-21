@@ -1,18 +1,32 @@
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
-    background:#DCE9C4;
     text-align: center;
-    color: #2F3E28;
+    background: pink;
+    color: white;
+    font-size: 25px;
+    width: 100%;
     height: 150px;
-    line-height: 0.8;
     padding: 20px;
+}
+
+body {
+    background-color: seashell;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
 }
 
 .introduction {
     padding: 5px 10px;
+    color: black;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 .introduction a {
@@ -20,85 +34,87 @@ header {
     font-style: italic;
 }
 
-#skills {
-    background: #9DB17C;
-    padding: 5px 10px;
-    margin-right: 50%;
-    position: fixed;
-    text-align: justify;
-    line-height: 1.5;
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 30px;
 }
 
-#skills h3 {
+.skill {
+    background-color: pink;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.skill1>.container:after {
+    background-image: linear-gradient(135deg, white, pink);
+}
+
+.skill2>.container:after {
+    background-image: linear-gradient(135deg, white, blue);
+}
+
+.skill3>.container:after {
+    background-image: linear-gradient(135deg, white, purple);
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h3 {
     color: white;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
 }
 
-#skills h4 {
-    text-transform: uppercase;
-}
-
-#backend {
+.details>p {
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
     text-align: center;
-    display: inline-block;
-    border: solid white;
-    background: #DCE9C4;
-    border-radius: 15px;
-    height: 100px;
-    position: relative;
-    width: 75%;
-    padding: 5px 10px;
-    margin-right: 50%;
-}
-
-#frontend {
-    text-align: center;
-    display: inline-block;
-    border: solid white;
-    background: #C1D897;
-    border-radius: 15px;
-    height: 100px;
-    position: relative;
-    width: 75%;
-    padding: 5px 10px;
-    margin-right: 50%;
-    margin-top: 5%;
-}
-
-#misc {
-    text-align: center;
-    display: inline-block;
-    border: solid white;
-    background: #B0CD7A;
-    border-radius: 15px;
-    height: 150px;
-    position: relative;
-    width: 75%;
-    padding: 5px 10px;
-    margin-right: 50%;
-    margin-top: 5%;
-}
-
-#softskills {
-    text-align: center;
-    display: inline-block;
-    border: solid white;
-    background: #9EC15C;
-    border-radius: 15px;
-    height: 125px;
-    position: relative;
-    width: 75%;
-    padding: 5px 10px;
-    margin-right: 50%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    border: 2px white dotted;
+    border-radius: 20px;
 }
 
 footer {
-    position: fixed;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
     left: 0;
     bottom: 0;
+    padding: 5px;
+    height: 30px;
     width: 100%;
-    background-color: white;
-    text-align: center;
+    background-color: pink;
+}
+
+footer a {
+    color: purple;
 }
