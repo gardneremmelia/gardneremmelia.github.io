@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-        <title>Hello World.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+        <title>Emmelia's Portfolio</title>
     </head>
-    <header>
-        <h1>Hello World.</h1>
-        <h2>My name is Emmelia Gardner.</h2>
-    </header>
     <body>
-        <div class="introduction">
-            <p><a id="welcome">Welcome to my website hosted by Github Pages!</a></p>
-            <p>I am an IT technician by day, (aspiring) full stack software developer by night.</p>
-        </div>
-        <div class="skills">
-            <div class="skill skill1">
-                <div class="container">
-                    <img src="resources/pinkflowers.jpg" alt="pink flowers">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <h1 class="name">Emmelia Gardner</h1>
+                <p class="tagline">Aspiring Full Stack Developer | IT Technician</p>
+            </div>
+        </header>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Hello World.</h2>
+                <p>Hi! I’m Emmelia, an aspiring software developer with a strong foundation in both backend and frontend technologies, currently pursuing my M.S. in Software Development at Boston University. My background includes proficiency in Python, Java, and C++ for backend development, as well as HTML, CSS, and JavaScript for frontend projects. I bring practical IT experience from my current role as an IT Technician with Killingly Public Schools, where I’ve honed my problem-solving skills and technical expertise in real-world scenarios.</p>
+                <p>In addition to my technical skills, I pride myself on being a dedicated learner and leader. My membership in organizations like the Society of Women Engineers, Girls Who Code, and Rewriting the Code reflects my commitment to fostering diversity and inclusion in tech. I’m also a Merit Scholarship recipient and a President’s List honoree, which demonstrate my academic dedication.</p>
+                <p>What sets me apart is my holistic approach—combining technical expertise with strong communication, leadership, and a relentless desire to learn. I’m passionate about contributing to impactful software projects that make a difference and excited to bring my skills and enthusiasm to a forward-thinking team.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="github">
+                    <p>View my projects on Github: <a href="https://github.com/gardneremmelia"><i class="bi bi-github"></i></a></p>
                 </div>
-                <div class="details">
-                    <h3>Back End Development</h3>
-                    <p>Python ● Java ● C++ ● C#.NET ● SQL</p>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <h3>Back End Development</h3>
+                        <p>Python ● Java ● C++ ● C#.NET ● SQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Front End Development</h3>
+                        <p>HTML ● CSS ● JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Miscellaneous</h3>
+                        <p>SDLC ● Databases ● IT support ● Project management</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="skills">
-            <div class="skill skill2">
-                <div class="container">
-                    <img src="resources/blueflowers.jpg" alt="blue flowers">
-                </div>
-                <div class="details">
-                    <h3>Front End Development</h3>
-                    <p>HTML ● CSS ● JavaScript</p>
-                </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you'd like to collaborate or connect, feel free to reach out!</p>
+                <a href="https://www.linkedin.com/in/emmelia-gardner/" class="contact-button">Connect on LinkedIn</a>
             </div>
-        </div>
-        <div class="skills">
-            <div class="skill skill3">
-                <div class="container">
-                    <img src="resources/purpleflowers.jpg" alt="purple flowers">
-                </div>
-                <div class="details">
-                    <h3>Miscellaneous</h3>
-                    <p>SDLC ● Databases ● IT support ● Project management</p>
-                </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Emmelia Gardner. All Rights Reserved.</p>
             </div>
-        </div>
+        </footer>
     </body>
-    <footer>
-        <h4>Connect with me on <a href="https://www.linkedin.com/in/emmelia-gardner/" target="_blank">LinkedIn</a>.</h4>
-    </footer>
+    </html>
 </html>
